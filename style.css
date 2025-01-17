@@ -16,20 +16,20 @@ nav {
     background-color: #cafdff;
 }
 
- header {
+header {
     background-color: #eadcff;
     height: calc(100vh - 70px);
-    padding: 60px;
+    padding: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
  }
 
- h1 {
+h1 {
     font-size: 72px;
  }
 
- .subheader {
+.subheader {
     font-size: 36px;
     margin: 16px 0 24px 0;
  }
@@ -39,13 +39,13 @@ button {
     color: white;
     border: none;
     padding: 8px 16px;
-    font-size: 24;
+    font-size: 24px;
     cursor: pointer;
  }
 
  a {
     color: #000;
-    font-size: 24;
+    font-size: 24px;
     font-weight: 700;
  }
 
@@ -59,7 +59,7 @@ ul {
 
 li {
     list-style-type: none;
-    padding-left: 24px;
+    padding-left: 16px;
 }
 
 .row {
@@ -71,14 +71,20 @@ li {
     justify-content: center;
 }
 
+#about,
+#discord,
+#contact,
+footer {
+    padding: 48px 0;  
+  }
+
 /*
 
 ABOUT
  
 */
 
-#about {
-    padding: 48px;  
+  #about {
     background-color: #f8ffdc;
   }
 
@@ -96,7 +102,6 @@ ABOUT
 
 .about__img--wrapper {
     width: 40%;
-    padding: 24px;
 }
 
 img {
@@ -105,6 +110,11 @@ img {
 
 .section__description--wrapper {
     width: 60%;
+   
+}
+
+.about__img--wrapper,
+.section__description--wrapper {
     padding: 0 24px;
 }
 
@@ -122,7 +132,6 @@ DISCORD
 
 #discord {
     background-color: #cefeff;
-    padding: 48px 0;
 }
 
 /*
@@ -133,7 +142,6 @@ Contact
 
 #contact {
     background-color: #dce9ff;
-    padding: 48px 0;
 }
 
 form {
@@ -196,7 +204,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .home__description--button {
@@ -205,7 +212,7 @@ footer {
 
 h1 {
   text-align: center;
-  font-size: 60;
+  font-size: 60px;
 }
 
 .subheader {
@@ -230,7 +237,6 @@ ul {
 }
 
 #discord .section__description {
-    max-width: 80%;
   flex-direction: column-reverse;
 }
 
@@ -239,10 +245,14 @@ footer {
 }
 
 .footer__logo {
-    max-width: 400px;
+    max-width: 360px;
 }
 
 .footer__link {
+    padding: 0 4px;
+    font-family: 18px;
+}
+.footer__links {
     margin-bottom: 24px;
 }
 }
